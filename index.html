@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Family Tree</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Family History</h1>
+    </header>
+
+    <main class="tree-container">
+        <!-- Granny (Root) -->
+        <div class="node" id="root">
+            <a href="#" class="person" data-description="old fossil">Granny</a>
+        </div>
+
+        <!-- Container for the two main branches -->
+        <div class="branches">
+            <!-- Left Branch -->
+            <div class="branch" id="left-branch">
+                <div class="node">
+                    <a href="#" class="person" data-description="gayporn recorder drugie retard">Arnav</a>
+                </div>
+                <div class="children-group">
+                    <div class="node">
+                        <a href="#" class="person" data-description="manchester united supporter">Reuell</a>
+                        <div class="children-group">
+                             <div class="node"><a href="#" class="person" data-description="Agnia's description here.">Agnia</a></div>
+                        </div>
+                    </div>
+                    <div class="node labeled-node">
+                        <span class="label same-person-label">same person</span>
+                        <a href="#" class="person" data-description="lactose intolerant alpaca">Amelia</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Branch -->
+            <div class="branch" id="right-branch">
+                <div class="diagram-grid">
+                    <div class="node" id="cherry"><a href="#" class="person" data-description="chintu rai chakraborty">Cherry</a></div>
+                    <div class="node" id="tara"><a href="#" class="person" data-description="chintu's sneaky link">Tara</a></div>
+                    <div class="node" id="shivest"><a href="#" class="person" data-description="gonna fumble again">Shivest</a></div>
+                    <div class="node" id="ivy"><a href="#" class="person" data-description="tara's sneaky link">Ivy</a></div>
+
+                    <div class="label" id="label-chintu">chintu's sneaky link</div>
+                    <div class="label" id="label-gooners">gooners</div>
+                    <div class="label" id="label-tara">tara's sneaky link</div>
+                    <div class="label" id="label-fumble">gonna fumble again</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for Descriptions -->
+    <div id="person-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-name"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
